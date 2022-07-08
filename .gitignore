@@ -1,0 +1,11 @@
+/.metadata/
+.metadata
+.DS_Store
+Servers
+target
+build
+bin
+.settings
+.gradle
+*.war
+*.bak
