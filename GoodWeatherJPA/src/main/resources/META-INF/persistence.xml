@@ -6,7 +6,10 @@
     <provider>org.hibernate.jpa.HibernatePersistenceProvider
     </provider>
     
-    <!-- <class>com.goodweatherjpa.entities.Point</class> -->
+    <class>com.goodweatherjpa.entities.Location</class>
+    <class>com.goodweatherjpa.entities.Point</class>
+    <class>com.goodweatherjpa.entities.Geometry</class>
+    <class>com.goodweatherjpa.entities.Coordinates</class>
     
 	<properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gwf_708?useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=US/Mountain" />
