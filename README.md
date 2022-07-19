@@ -18,6 +18,15 @@
 
 1. Creating entities
 - 1,000,000 simple entities
-- int entities: 3 min 6 sec
-- string entities: 3 min 16 sec
-- difference: 10 sec (negligible)
+- difference: 5.37%
+- STORAGE: String entities + 300 mb **(59% larger)**
+
+2. Retrieving entities
+- 100,000 of each, random ids added to HashSet
+- difference: 1.33%
+
+**RESULTS**
+- Difference is negligible for the scale of this application.
+- Storage of data is required with either PK setup.
+- Storage would actually be LESS with String ids as an additional column is not needed.
+- **Normalization** is important but **string vs int PK** is not for this application.
