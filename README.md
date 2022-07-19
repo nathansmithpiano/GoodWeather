@@ -6,7 +6,7 @@
 - JPA version 2.2
 - JPA implementation type: disable library configuration
 
-## TESTING
+## TESTING (db_tests branch)
 
 #### Primary Keys: strings vs int ids
 
