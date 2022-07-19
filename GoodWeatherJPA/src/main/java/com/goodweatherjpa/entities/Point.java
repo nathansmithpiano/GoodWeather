@@ -7,12 +7,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 import org.json.JSONObject;
 
 import com.goodweatherjpa.settings.Settings;
 
 @Entity
+@Table(name = "point")
 public class Point {
 
 	@Id
@@ -23,10 +25,6 @@ public class Point {
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "location_name")
 	private Location location;
-
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "coordinates_id")
-	private Coordinates coordinates;
 
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "geometry_id")
@@ -52,14 +50,6 @@ public class Point {
 
 	public void setLocation(Location location) {
 		this.location = location;
-	}
-
-	public Coordinates getCoordinates() {
-		return coordinates;
-	}
-
-	public void setCoordinates(Coordinates coordinates) {
-		this.coordinates = coordinates;
 	}
 
 	public Geometry getGeometry() {

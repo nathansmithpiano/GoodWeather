@@ -6,6 +6,7 @@
     <provider>org.hibernate.jpa.HibernatePersistenceProvider
     </provider>
     
+    <class>com.goodweatherjpa.entities.NwsEndpoint</class>
     <class>com.goodweatherjpa.entities.Location</class>
     <class>com.goodweatherjpa.entities.Point</class>
     <class>com.goodweatherjpa.entities.Geometry</class>
