@@ -2,8 +2,18 @@ package com.goodweatherjpa.dbtests;
 
 import java.util.Objects;
 
-public class IntEntity {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "int_entity")
+public class IntEntity {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
 	private String contents;

@@ -2,13 +2,20 @@ package com.goodweatherjpa.dbtests;
 
 import java.util.Objects;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "string_entity")
 public class StringEntity {
 
 	// Sample URI: https://api.weather.gov/points/39.9884,-105.2336
 	// 48 characters long
 
 	// Testing String: 50 random characters
-
+	
+	@Id
 	private String id;
 
 	private String contents;
